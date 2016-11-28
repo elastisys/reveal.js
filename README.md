@@ -1,3 +1,22 @@
+# Elastisys template
+
+The Elastisys template is located under [css/theme/source/elastisys.scss](css/theme/source/elastisys.scss).
+
+After modifying, compile it with:
+
+    npm install
+    grunt --css-themes
+
+The compiled CSS file ends up under [css/theme/elastisys.css](css/theme/elastisys.css)
+
+*Note: you need to have nodejs, npm, and Grunt installed*:
+
+    sudo apt-get install nodejs npm
+    sudo npm install -g grunt-cli
+
+   
+
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).

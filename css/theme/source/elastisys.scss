@@ -1,0 +1,79 @@
+/**
+ * Elastisys theme for reveal.js.
+ *
+ * By Peter Gardfjäll, https://elastisys.com
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+$backgroundColor: #fff;
+
+$mainColor: #001871;
+$headingColor: #84BD00;
+
+$mainFontSize: 36px;
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingLetterSpacing: bold;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #C5299B;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(100, 100, 100, 0.4), rgba(100, 100, 100, 0.05) );
+}
+
+// Make bullets green
+$bulletColor: #84BD00;
+
+// Header content goes in the upper left corner
+div.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  //background-color: #001871;
+  text-align: left;
+  text-color: $mainColor;
+  font-family: $mainFont;  
+}
+
+
+// Footer content goes in a <div> in the lower left corner
+div.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  text-color: $mainColor;
+  text-align: left;
+  font-family: $mainFont;
+}
+
+// Code segments shown on a black background.
+.reveal pre code {
+  background: #000000;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
