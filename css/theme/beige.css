@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Beige theme for reveal.js.
  *
@@ -100,13 +101,34 @@ body {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
+  list-style-type: none; }
+
+.reveal ul li::before {
+  content: "•";
+  color: #eee;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
 
 .reveal ul ul {
-  list-style-type: square; }
+  list-style-type: none; }
+
+.reveal ul ul li::before {
+  content: "▪";
+  color: #eee;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
 
 .reveal ul ul ul {
-  list-style-type: circle; }
+  list-style-type: none; }
+
+.reveal ul ul ul li::before {
+  content: "◦";
+  color: #eee;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
 
 .reveal ul ul,
 .reveal ul ol,
